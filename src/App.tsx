@@ -3,6 +3,7 @@ import Heading from "./components/Heading";
 import Section from "./components/Section";
 import Counter from "./components/counter";
 import List from "./components/List";
+import Hooks from "./components/Hooks";
 
 function App() {
   const [count, setCount] = useState<number>(0);
@@ -15,6 +16,7 @@ function App() {
         items={["coffe", "tacos", "code"]}
         render={(item: string) => <div className="gold">{item}</div>}
       />
+      <Hooks />
     </>
   );
 }
